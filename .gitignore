@@ -3,3 +3,17 @@
 ################################################################################
 
 /.vs/repository,restaurant/v16/Browse.VC.db
+/.vs/repository,restaurant/v16/Browse.VC.db-shm
+/.vs/repository,restaurant/v16/Browse.VC.opendb
+/.vs/repository,restaurant/v16/ipch/AutoPCH/4e6d98459d49204b/CLIENT.ipch
+/.vs/repository,restaurant/v16/ipch/AutoPCH/165e85113b637b38/STAFFREPOSITORY.ipch
+/.vs/repository,restaurant/v16/Browse.VC.db-wal
+/.vs/repository,restaurant/v16/ipch/AutoPCH/a49ddd8965e635bc/STAFF.ipch
+/.vs/repository,restaurant/v16/ipch/AutoPCH/a591a5eb1d576864/REPOSITORY.ipch
+/.vs/repository,restaurant/v16/ipch/AutoPCH/b47d0ec4611772df/COMMAND.ipch
+/.vs/repository,restaurant/v16/ipch/AutoPCH/72a72b01037f4819/PROVIDERREPOSITORY.ipch
+/.vs/repository,restaurant/v16/.suo
+*.user
+*.filters
+*.vcxproj
+*.sln
