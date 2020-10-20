@@ -36,8 +36,8 @@ void ClientRepository::ReadFromStorage()
 
 void ClientRepository::WriteToStorage()
 {
-	ofstream fout("Client.txt",ios::out);
-	for (int i = 0;i <vEntity.size();i++)
+	ofstream fout("Client.txt", ios::out);
+	for (int i = 0;i < vEntity.size();i++)
 	{
 		fout << ((Client*)vEntity[i])->getname() << " " << ((Client*)vEntity[i])->getsurname()
 			<< " " << ((Client*)vEntity[i])->getdiscount() << endl;

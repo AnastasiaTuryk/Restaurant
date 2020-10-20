@@ -4,7 +4,7 @@ using namespace std;
 #include"Repository.h"
 #include"RestaurantRepository.h"
 
-RestaurantRepository::RestaurantRepository(bool sync): Repository(sync)
+RestaurantRepository::RestaurantRepository(bool sync) : Repository(sync)
 {
 	ReadFromStorage();
 }
@@ -44,10 +44,9 @@ void RestaurantRepository::WriteToStorage()
 	{
 		fout << ((Restaurant*)vEntity[i])->getname() << " "
 			<< ((Restaurant*)vEntity[i])->getdesign() << " "
-			<< ((Restaurant*)vEntity[i])->getkitchen() << " " 
+			<< ((Restaurant*)vEntity[i])->getkitchen() << " "
 			<< ((Restaurant*)vEntity[i])->getrating() << " "
-			<< ((Restaurant*)vEntity[i])->getprice()<<endl;
+			<< ((Restaurant*)vEntity[i])->getprice() << endl;
 	}
 	fout.close();
 }
-

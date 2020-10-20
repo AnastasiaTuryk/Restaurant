@@ -38,7 +38,7 @@ void Command::AddStaff(Staff& staff)
 
 void Command::printRestaurant()
 {
-	for (int i = 0; i < restaurantRepository.GetEntity().size(); i++) 
+	for (int i = 0; i < restaurantRepository.GetEntity().size(); i++)
 	{
 		(restaurantRepository.GetEntity()[i])->Write();
 		//cout << endl;
@@ -73,7 +73,7 @@ void Command::write(string str)
 			(clientRepository.GetEntity()[i])->Write();
 		}
 	}
-	else if(str=="Staff")
+	else if (str == "Staff")
 	{
 		cout << "information about staffs:" << endl;
 		for (int i = 0;i < staffRepository.GetEntity().size();i++)
@@ -81,7 +81,7 @@ void Command::write(string str)
 			(staffRepository.GetEntity()[i])->Write();
 		}
 	}
-	else if(str=="Provider")
+	else if (str == "Provider")
 	{
 		cout << "information about providers:" << endl;
 		for (int i = 0;i < providerRepository.GetEntity().size();i++)
@@ -103,7 +103,7 @@ void Command::ShowTopRatingStaff()
 		{
 			if (((Staff*)staffRepository.GetEntity()[j])->rating < ((Staff*)staffRepository.GetEntity()[j + 1])->rating)
 			{
-				name=((Staff*)staffRepository.GetEntity()[j])->name;
+				name = ((Staff*)staffRepository.GetEntity()[j])->name;
 				((Staff*)staffRepository.GetEntity()[j])->name = ((Staff*)staffRepository.GetEntity()[j + 1])->name;
 				((Staff*)staffRepository.GetEntity()[j + 1])->name = name;
 
@@ -120,7 +120,7 @@ void Command::ShowTopRatingStaff()
 			}
 		}
 	}
-	for (int i= 0;i < staffRepository.GetEntity().size();i++)
+	for (int i = 0;i < staffRepository.GetEntity().size();i++)
 	{
 		((Staff*)staffRepository.GetEntity()[i])->Write();
 	}
@@ -146,7 +146,7 @@ void Command::ChangeRatingProvider()
 	string name;
 	cout << "type the name:" << endl;
 	cin >> name;
-	int newrate=0;
+	int newrate = 0;
 	for (int i = 0;i < providerRepository.GetEntity().size();i++)
 	{
 		if (((Provider*)providerRepository.GetEntity()[i])->name == name)
@@ -162,7 +162,7 @@ void Command::rewrite(string name, string surname)
 	int m = 0;
 	for (int i = 0;i < clientRepository.GetEntity().size();i++)
 	{
-		if ((name == ((Client*)clientRepository.GetEntity()[i])->getname() && 
+		if ((name == ((Client*)clientRepository.GetEntity()[i])->getname() &&
 			(surname == ((Client*)clientRepository.GetEntity()[i])->getsurname())))
 		{
 			((Client*)clientRepository.GetEntity()[i])->setdiscount(((Client*)clientRepository.GetEntity()[i])->getdiscount() + 1);
@@ -179,9 +179,9 @@ void Command::rewrite(string name, string surname)
 	str.open("Client.txt");
 	for (int i = 0;i < clientRepository.GetEntity().size();i++)
 	{
-		str << ((Client*)clientRepository.GetEntity()[i])->getname()<<" "
+		str << ((Client*)clientRepository.GetEntity()[i])->getname() << " "
 			<< ((Client*)clientRepository.GetEntity()[i])->getsurname()
-			<<" " << ((Client*)clientRepository.GetEntity()[i])->getdiscount() << endl;
+			<< " " << ((Client*)clientRepository.GetEntity()[i])->getdiscount() << endl;
 	}
 	str.close();
 }
@@ -192,7 +192,7 @@ void Command::ChangeRating()
 {
 	int rate;
 	string lastname;
-	cout  << "you choose to change rating of restaurant:" << endl;
+	cout << "you choose to change rating of restaurant:" << endl;
 	cout << "type the name:" << endl;
 	cin >> lastname;
 	for (int i = 0;i < restaurantRepository.GetEntity().size();i++)
@@ -205,7 +205,7 @@ void Command::ChangeRating()
 				break;
 			((Restaurant*)restaurantRepository.GetEntity()[i])->rating = rate;
 			break;
-			
+
 		}
 	}
 }
@@ -224,7 +224,7 @@ void Command::Order()
 			estab.erase(estab.begin() + i);//erase the i-th element
 		}
 	}
-	ofstream fout("Client.txt",ios_base::app);
+	ofstream fout("Client.txt", ios_base::app);
 	if (!fout)
 	{
 		cout << "your file is not open!";
@@ -238,7 +238,7 @@ void Command::Order()
 		string surname;cout << "input your surname: ";cin >> surname;
 		int discount;
 		cout << "your discount: ";cin >> discount;
-		Client* cl=new Client(nameclient,surname,discount);
+		Client* cl = new Client(nameclient, surname, discount);
 		fout << nameclient << " " << surname << " " << discount << endl;
 		cout << "Thank you! We recorded your contacts!Our manager will contact with you soon!" << endl;
 		break;
@@ -252,14 +252,14 @@ void Command::ShowHighRating()
 {
 	int max = ((Restaurant*)restaurantRepository.GetEntity()[0])->rating;
 	int index = 0;
-	for (int i = 1;i <restaurantRepository.GetEntity().size();i++)
+	for (int i = 1;i < restaurantRepository.GetEntity().size();i++)
 	{
 		if (max < ((Restaurant*)restaurantRepository.GetEntity()[i])->rating)
 		{
 			max = ((Restaurant*)restaurantRepository.GetEntity()[i])->rating;
 			index = i;
 		}
-	} 
+	}
 	cout << endl;
 	cout << "info about restaurant with highest rating:" << endl;
 	((Restaurant*)restaurantRepository.GetEntity()[index])->Write();

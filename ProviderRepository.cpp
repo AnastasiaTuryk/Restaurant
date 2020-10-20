@@ -42,8 +42,8 @@ void ProviderRepository::WriteToStorage()
 	str.open("Provider.txt");
 	for (int i = 0;i < vEntity.size();i++)
 	{
-		str << ((Provider*)vEntity[i])->getname()<<" "<<((Provider*)vEntity[i])->getrating()<<
-			" "<<((Provider*)vEntity[i])->getcountry() << endl;
+		str << ((Provider*)vEntity[i])->getname() << " " << ((Provider*)vEntity[i])->getrating() <<
+			" " << ((Provider*)vEntity[i])->getcountry() << endl;
 	}
 	str.close();
 }

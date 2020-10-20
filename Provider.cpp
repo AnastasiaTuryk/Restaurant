@@ -13,7 +13,7 @@ Provider::Provider(string name, int rate, string country) :Person(name)
 
 void Provider::Write()
 {
-	cout << "name: " << name << endl<< "rating: " << rate << endl << "country: " << country << endl;
+	cout << "name: " << name << endl << "rating: " << rate << endl << "country: " << country << endl;
 	cout << endl;
 }
 

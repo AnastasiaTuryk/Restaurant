@@ -5,16 +5,16 @@
 #include<string>
 using namespace std;
 
-Client::Client(string name,string surname,int discount): Person(name)
+Client::Client(string name, string surname, int discount) : Person(name)
 {
 	this->surname = surname;
 	this->discount = discount;
-	
+
 }
 
 void Client::Write()
 {
-	cout << "info about guest:" << name << " " << surname <<" "<<discount<<endl;
+	cout << "info about guest:" << name << " " << surname << " " << discount << endl;
 }
 
 string Client::getname()

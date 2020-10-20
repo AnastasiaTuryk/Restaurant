@@ -14,10 +14,6 @@ using namespace std;
 int main()
 {
 	Command cmd;
-	//cmd.RestaurantShow();
-	//cmd.ShowClient();
-	//cmd.ShowStaff();
-	//cmd.ShowProvider();
 	cmd.printAll();
 	bool menu = false;
 	cout << "\t\t\t\t\tHELLO! You are greeted by a chain of restaurants!!!" << endl << endl;
@@ -44,7 +40,7 @@ int main()
 			cmd.printRestaurant();
 			cout << endl << endl;
 			bool isBool = false;
-			while (isBool==false)
+			while (isBool == false)
 			{
 				cout << endl;
 				cout << "1-to see the highest rated restaurant" << endl;
@@ -76,7 +72,7 @@ int main()
 					cout << "kitchen: ";cin >> kitchen;cout << "rating: ";cin >> rating;
 					cout << "average price: ";cin >> price;
 					Restaurant r;
-					r = Restaurant(name, design, kitchen,rating,price);
+					r = Restaurant(name, design, kitchen, rating, price);
 					try
 					{
 						cmd.addRestaurant(r);
@@ -98,7 +94,7 @@ int main()
 		{
 			cout << endl;
 			bool isOkay = false;
-			while(isOkay==false)
+			while (isOkay == false)
 			{
 				cout << "1-to see the list of client" << endl;
 				cout << "2-to see the list of staff" << endl;
@@ -164,12 +160,12 @@ int main()
 					bool eVRO = false;
 					while (eVRO == false)
 					{
-						cout << "\t\t\t1-add staff" << endl;
-						cout << "\t\t\t2-change rating" << endl;
-						cout << "\t\t\t3-to see the top rating" << endl;
-						cout << "\t\t\t4-exit" << endl;
+						cout << "\t1-add staff" << endl;
+						cout << "\t2-change rating" << endl;
+						cout << "\t3-to see the top rating" << endl;
+						cout << "\t4-exit" << endl;
 						int inputThree;cin >> inputThree;
-						if (inputThree==1)
+						if (inputThree == 1)
 						{
 							string name;string position;int experience;int rating;
 							cout << "name: ";cin >> name;
@@ -178,11 +174,11 @@ int main()
 							s = Staff(name, position, experience, rating);
 							cmd.AddStaff(s);
 						}
-						else if (inputThree==2)
+						else if (inputThree == 2)
 						{
 							cmd.ChangeRatingStaff();
 						}
-						else if (inputThree==3)
+						else if (inputThree == 3)
 						{
 							cmd.ShowTopRatingStaff();
 						}
@@ -200,9 +196,9 @@ int main()
 					bool user4 = false;
 					while (user4 == false)
 					{
-						cout << "\t\t\t\t1-to add provider" << endl;
-						cout << "\t\t\t\t2-to change rating" << endl;
-						cout << "\t\t\t\t3-exit" << endl;
+						cout << "\t1-to add provider" << endl;
+						cout << "\t2-to change rating" << endl;
+						cout << "\t3-exit" << endl;
 						int inputFour;cin >> inputFour;
 						if (inputFour == 1)
 						{
@@ -212,13 +208,13 @@ int main()
 							pr = Provider(name, rating, country);
 							cmd.AddProvider(pr);
 						}
-						else if (inputFour==2)
+						else if (inputFour == 2)
 						{
 							cmd.ChangeRatingProvider();
 						}
-						else if (inputFour==3)
+						else if (inputFour == 3)
 						{
-							user4= true;
+							user4 = true;
 							break;
 						}
 					}
@@ -234,7 +230,7 @@ int main()
 		}
 		case 3:
 		{
-			cmd.Order();  
+			cmd.Order();
 			break;
 		}
 		default:
