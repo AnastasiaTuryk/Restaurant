@@ -13,7 +13,6 @@ protected:
 public:
 	int rating;
 	Restaurant(string = "", string = "", string = "", int = 0, float = 0);
-	//void RestaurantInformation(string name, string design, string kitchen, int rating,float price);
 	void Write();
 
 	int getrating();

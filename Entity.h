@@ -8,4 +8,3 @@ public:
 	virtual void Write() {}
 };
 #endif // !ENTITY_H
-

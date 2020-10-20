@@ -5,7 +5,7 @@
 #include<iostream>
 using namespace std;
 
-class Staff:public Person
+class Staff :public Person
 {
 protected:
 	string position;
@@ -14,9 +14,9 @@ public:
 
 	int rating;
 
-	Staff(string = "", string = "", int = 0,int=0);
+	Staff(string = "", string = "", int = 0, int = 0);
 
-	void StaffInformation(string name, string position, int experience,int rating);
+	void StaffInformation(string name, string position, int experience, int rating);
 
 	void Write() override;
 
@@ -30,4 +30,3 @@ public:
 
 };
 #endif
-

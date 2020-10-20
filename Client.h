@@ -5,19 +5,19 @@
 #include<string>
 #include<iostream>
 using namespace std;
-class Client:public Person
+class Client :public Person
 {
 protected:
 	int phone;
 	int discount;
 	string surname;
 public:
-	
-	Client(string name="",string surname="",int discount=0);
 
-	
+	Client(string name = "", string surname = "", int discount = 0);
+
+
 	void Write() override;
-	
+
 	string getname();
 	string getsurname();
 	void setdiscount(int);

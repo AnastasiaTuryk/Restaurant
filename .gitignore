@@ -54,3 +54,4 @@
 /.vs/repository,restaurant/v16/ipch/AutoPCH/a0a724e0fcab60f4/RESTAURANT.ipch
 /.vs/repository,restaurant/v16/ipch/AutoPCH/e8b9f7ed795269cb/RESTAURANT.ipch
 /.vs/repository,restaurant/v16/ipch/AutoPCH/ed92e2af10102bb2/PROVIDERREPOSITORY.ipch
+*.ipch

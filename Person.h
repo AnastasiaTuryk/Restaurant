@@ -7,7 +7,7 @@ using namespace std;
 
 class Person :public Entity
 {
-public: 
+public:
 	string name = "";
 	Person(string name)
 	{
@@ -23,8 +23,7 @@ public:
 	}
 	virtual void Write()
 	{
-		cout <<name<<endl;
+		cout << name << endl;
 	}
 };
 #endif
-

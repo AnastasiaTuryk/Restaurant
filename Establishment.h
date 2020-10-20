@@ -5,13 +5,13 @@
 #include "Entity.h"
 using namespace std;
 
-class Establishment:public Entity
+class Establishment :public Entity
 {
 public:
 	string name = "";
 	string design = "";
 	float price;
-	Establishment(string name,string design,float price)
+	Establishment(string name, string design, float price)
 	{
 		this->name = name;
 		this->design = design;
@@ -20,7 +20,7 @@ public:
 
 	virtual void Write()
 	{
-		cout <<name<<" "<<design<<" "<<price<< endl;
+		cout << name << " " << design << " " << price << endl;
 	}
 };
 #endif

@@ -9,14 +9,13 @@ class Provider :public Person
 {
 protected:
 	string country;
-	
+
 public:
 	int rate;
-	Provider(string = "", int=0,string = "");
+	Provider(string = "", int = 0, string = "");
 	//void ProviderInformation(string name,int rate,string country);
 	void Write();
 	int getrating();
 	string getcountry();
 };
 #endif
-
