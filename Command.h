@@ -1,4 +1,3 @@
-
 #ifndef COMMAND_H
 #define COMMAND_H
 #include"Restaurant.h"
@@ -21,7 +20,7 @@ class Command
 {
 
 public:
-	
+
 	vector<Person*> pers;
 	vector<Establishment*> estab;
 
@@ -35,7 +34,7 @@ public:
 	void write(string str);
 	void printRestaurant();
 
-	void AddClient(Client &client);
+	void AddClient(Client& client);
 	void AddStaff(Staff& staff);
 	void AddProvider(Provider& provider);
 	void addRestaurant(Restaurant& restaurant);
@@ -54,6 +53,6 @@ public:
 	void ShowLowPrice();
 
 	~Command();
-	
+
 };
 #endif // !COMMAND_H

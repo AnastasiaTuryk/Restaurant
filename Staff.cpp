@@ -3,14 +3,14 @@
 #include<iostream>
 using namespace std;
 
-Staff::Staff(string name, string position, int experience,int rating) :Person(name)
+Staff::Staff(string name, string position, int experience, int rating) :Person(name)
 {
 	this->position = position;
 	this->experience = experience;
 	this->rating = rating;
 }
 
-void Staff:: StaffInformation(string name, string position, int experience,int rating)
+void Staff::StaffInformation(string name, string position, int experience, int rating)
 {
 	this->name = name;
 	this->position = position;
@@ -48,4 +48,3 @@ void Staff::Write()
 	cout << "name: " << name << endl << "position: " << position << endl << "experience: " << experience << endl << "rating: " << rating << endl;;
 	cout << endl;
 }
-

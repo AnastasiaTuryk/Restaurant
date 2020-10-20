@@ -1,3 +1,4 @@
+
 #ifndef RESTAURANTREPOSITORY_H
 #define RESTAURANTREPOSITORY_H
 #include <fstream>
@@ -17,4 +18,3 @@ public:
 	void WriteToStorage();
 };
 #endif // 
-
