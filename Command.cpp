@@ -129,7 +129,7 @@ void Command::ShowTopRatingStaff()
 void Command::ChangeRatingStaff()
 {
 	string name;cout << "input the name of employeer: " << endl;cin >> name;
-	int newrate = 0;
+	int newrate=0;
 	for (int i = 0;i < staffRepository.GetEntity().size();i++)
 	{
 		if (((Staff*)staffRepository.GetEntity()[i])->name == name)
@@ -146,7 +146,7 @@ void Command::ChangeRatingProvider()
 	string name;
 	cout << "type the name:" << endl;
 	cin >> name;
-	int newrate = 0;
+	int newrate=0;
 	for (int i = 0;i < providerRepository.GetEntity().size();i++)
 	{
 		if (((Provider*)providerRepository.GetEntity()[i])->name == name)
