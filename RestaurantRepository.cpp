@@ -21,7 +21,7 @@ void RestaurantRepository::ReadFromStorage()
 	string kitchen;
 	int rating;
 	float price;
-	ifstream fin("Restaurant.txt");
+	ifstream fin("C:\\Users\\User\\Desktop\\с++ 2 курс\\repository,restaurant\\Restaurant.txt");
 	if (!fin.is_open())
 	{
 		cout << "your file is not open!" << endl;
@@ -39,7 +39,7 @@ void RestaurantRepository::ReadFromStorage()
 
 void RestaurantRepository::WriteToStorage()
 {
-	ofstream fout("Restaurant.txt");
+	ofstream fout("C:\\Users\\User\\Desktop\\с++ 2 курс\\repository,restaurant\\Restaurant.txt");
 	for (int i = 0;i < vEntity.size();i++)
 	{
 		fout << ((Restaurant*)vEntity[i])->getname() << " "

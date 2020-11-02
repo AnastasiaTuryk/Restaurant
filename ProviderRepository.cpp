@@ -1,7 +1,7 @@
 #include<iostream>
 #include<fstream>
 using namespace std;
-#include"Command.h"
+//#include"Command.h"
 #include"Repository.h"
 #include"ProviderRepository.h"
 
@@ -20,7 +20,7 @@ void ProviderRepository::ReadFromStorage()
 	string name;
 	int rate;
 	string country;
-	ifstream fin("Provider.txt");
+	ifstream fin("C:\\Users\\User\\Desktop\\с++ 2 курс\\repository,restaurant\\Provider.txt");
 	if (!fin.is_open())
 	{
 		cout << "your file is not open!" << endl;
@@ -39,7 +39,7 @@ void ProviderRepository::ReadFromStorage()
 void ProviderRepository::WriteToStorage()
 {
 	ofstream str;
-	str.open("Provider.txt");
+	str.open("C:\\Users\\User\Desktop\\с++ 2 курс\\repository,restaurant\\Provider.txt");
 	for (int i = 0;i < vEntity.size();i++)
 	{
 		str << ((Provider*)vEntity[i])->getname() << " " << ((Provider*)vEntity[i])->getrating() <<

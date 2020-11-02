@@ -55,3 +55,17 @@
 /.vs/repository,restaurant/v16/ipch/AutoPCH/e8b9f7ed795269cb/RESTAURANT.ipch
 /.vs/repository,restaurant/v16/ipch/AutoPCH/ed92e2af10102bb2/PROVIDERREPOSITORY.ipch
 *.ipch
+/.vs/repository,restaurant/v16/Solution.VC.db
+/.vs/repository,restaurant/v16/Solution.VC.db-shm
+/.vs/repository,restaurant/v16/Solution.VC.db-wal
+/Debug/reposito.ae09a953.tlog/Lib.command.1.tlog
+/Debug/reposito.ae09a953.tlog/Lib-link.read.1.tlog
+/Debug/reposito.ae09a953.tlog/Lib-link.write.1.tlog
+/Debug/repository,restaurant.Build.CppClean.log
+/Debug/repository,restaurant.idb
+/Debug/repository,restaurant.lib
+/Debug/RestaurantAdmin.pdb
+/Debug/RestaurantAdmin.ilk
+/Debug/RestaurantUser.ilk
+/Debug/RestaurantUser.pdb
+/Debug/repository,restaurant.lib.recipe

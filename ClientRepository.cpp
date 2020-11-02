@@ -1,7 +1,7 @@
 #include<iostream>
 #include<fstream>
 using namespace std;
-#include"Command.h"
+
 #include"Repository.h"
 #include"ClientRepository.h"
 
@@ -17,7 +17,7 @@ bool ClientRepository::Add(Client& client)
 
 void ClientRepository::ReadFromStorage()
 {
-	ifstream fin("Client.txt");
+	ifstream fin("C:\\Users\\User\\Desktop\\с++ 2 курс\\repository,restaurant\\Client.txt");
 	string name;string surname;int discount;
 	if (!fin.is_open())
 	{
@@ -36,7 +36,7 @@ void ClientRepository::ReadFromStorage()
 
 void ClientRepository::WriteToStorage()
 {
-	ofstream fout("Client.txt", ios::out);
+	ofstream fout("C:\\Users\\User\\Desktop\\с++ 2 курс\\repository,restaurant\\Client.txt", ios::out);
 	for (int i = 0;i < vEntity.size();i++)
 	{
 		fout << ((Client*)vEntity[i])->getname() << " " << ((Client*)vEntity[i])->getsurname()

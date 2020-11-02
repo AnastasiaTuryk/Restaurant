@@ -1,7 +1,7 @@
 #include<iostream>
 #include<fstream>
 using namespace std;
-#include"Command.h"
+//#include"Command.h"
 #include"Repository.h"
 #include"StaffRepository.h"
 
@@ -21,7 +21,7 @@ void StaffRepository::ReadFromStorage()
 	string position;
 	int experience;
 	int rating;
-	ifstream fin("Staff.txt");
+	ifstream fin("C:\\Users\\User\\Desktop\\с++ 2 курс\\repository,restaurant\\Staff.txt");
 	if (!fin.is_open())
 	{
 		cout << "your file is not open!" << endl;
@@ -39,7 +39,7 @@ void StaffRepository::ReadFromStorage()
 
 void StaffRepository::WriteToStorage()
 {
-	ofstream fout("Staff.txt");
+	ofstream fout("C:\\Users\\User\\Desktop\\с++ 2 курс\\repository,restaurant\\Staff.txt");
 	for (int i = 0;i < vEntity.size();i++)
 	{
 		fout << ((Staff*)vEntity[i])->getname() << " " << ((Staff*)vEntity[i])->getposition() << " "

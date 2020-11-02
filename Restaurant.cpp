@@ -1,5 +1,5 @@
 #include"Restaurant.h"
-#include"Command.h"
+//#include"Command.h"
 #include<iostream>
 using namespace std;
 Restaurant::Restaurant(string name, string design, string kitchen, int rating, float price) : Establishment(name, design, price)

@@ -1,6 +1,4 @@
 #include"Client.h"
-#include"Command.h"
-//#include"Person.h"
 #include<iostream>
 #include<string>
 using namespace std;
