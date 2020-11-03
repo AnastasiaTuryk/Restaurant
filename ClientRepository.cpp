@@ -39,7 +39,8 @@ void ClientRepository::WriteToStorage()
 	ofstream fout("C:\\Users\\User\\Desktop\\с++ 2 курс\\repository,restaurant\\Client.txt", ios::out);
 	for (int i = 0;i < vEntity.size();i++)
 	{
-		fout << ((Client*)vEntity[i])->getname() << " " << ((Client*)vEntity[i])->getsurname()
+		fout << ((Client*)vEntity[i])->getname() << " " 
+			<< ((Client*)vEntity[i])->getsurname()
 			<< " " << ((Client*)vEntity[i])->getdiscount() << endl;
 	}
 	fout.close();

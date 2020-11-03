@@ -1,3 +1,3 @@
 Salalat modern salats 2 200
-CheeseBakery youth deserts 2 300
+CheeseBakery youth deserts 5 300
 LaPiec loft pizza 3 250

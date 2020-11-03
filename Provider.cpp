@@ -5,7 +5,7 @@ using namespace std;
 
 Provider::Provider(string name, int rate, string country) :Person(name)
 {
-	this->name = name;
+	//this->name = name;
 	this->rate = rate;
 	this->country = country;
 }

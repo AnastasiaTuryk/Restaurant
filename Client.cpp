@@ -9,7 +9,6 @@ Client::Client(string name, string surname, int discount) : Person(name)
 	this->discount = discount;
 
 }
-
 void Client::Write()
 {
 	cout << "info about guest:" << name << " " << surname << " " << discount << endl;

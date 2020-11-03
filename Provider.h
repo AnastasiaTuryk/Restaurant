@@ -13,8 +13,7 @@ protected:
 public:
 	int rate;
 	Provider(string = "", int = 0, string = "");
-	//void ProviderInformation(string name,int rate,string country);
-	void Write();
+	void Write() override;
 	int getrating();
 	string getcountry();
 };

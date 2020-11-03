@@ -1,7 +1,6 @@
 #include<iostream>
 #include<fstream>
 using namespace std;
-//#include"Command.h"
 #include"Repository.h"
 #include"ProviderRepository.h"
 
@@ -17,10 +16,11 @@ bool ProviderRepository::Add(Provider& provider)
 
 void ProviderRepository::ReadFromStorage()
 {
+	
+	ifstream fin("C:\\Users\\User\\Desktop\\с++ 2 курс\\repository,restaurant\\Provider.txt");
 	string name;
 	int rate;
 	string country;
-	ifstream fin("C:\\Users\\User\\Desktop\\с++ 2 курс\\repository,restaurant\\Provider.txt");
 	if (!fin.is_open())
 	{
 		cout << "your file is not open!" << endl;
@@ -38,12 +38,12 @@ void ProviderRepository::ReadFromStorage()
 
 void ProviderRepository::WriteToStorage()
 {
-	ofstream str;
-	str.open("C:\\Users\\User\Desktop\\с++ 2 курс\\repository,restaurant\\Provider.txt");
+	ofstream fout("C:\\Users\\User\Desktop\\с++ 2 курс\\repository,restaurant\\Provider.txt", ios::out);
 	for (int i = 0;i < vEntity.size();i++)
 	{
-		str << ((Provider*)vEntity[i])->getname() << " " << ((Provider*)vEntity[i])->getrating() <<
+		fout << ((Provider*)vEntity[i])->getname() << " "
+			<< ((Provider*)vEntity[i])->getrating() <<
 			" " << ((Provider*)vEntity[i])->getcountry() << endl;
 	}
-	str.close();
+	fout.close();
 }
